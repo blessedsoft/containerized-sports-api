@@ -1,29 +1,27 @@
-# Sports API Management System
+# **Containerized Sports API Management System**
 
 ## **Project Overview**
-This project demonstrates building a containerized API management system for querying sports data. It leverages **Amazon ECS (Fargate)** for running containers, **Amazon API Gateway** for exposing REST endpoints, and an external **Sports API** for real-time sports data. The project showcases advanced cloud computing practices, including API management, container orchestration, and secure AWS integrations.
+This project showcases the development of a **containerized API management system** for querying real-time sports data. It leverages **Amazon ECS (Fargate)** for container orchestration, **Amazon API Gateway** for exposing REST endpoints, and integrates an external **Sports API** for live game data. The implementation highlights best practices in **cloud computing, API management, containerization, and AWS security**.
 
 ---
 
-## **Features**
-- Exposes a REST API for querying real-time sports data
-- Runs a containerized backend using Amazon ECS with Fargate
-- Scalable and serverless architecture
-- API management and routing using Amazon API Gateway
- 
+## **Key Features**
+- **REST API** for querying live sports data  
+- **Containerized backend** deployed on ECS with Fargate  
+- **Scalable and serverless architecture**  
+- **API Gateway** for managing and routing API requests  
+
 ---
 
 ## **Prerequisites**
-- **Sports API Key**: Sign up for a free account and subscription & obtain your API Key at serpapi.com
-- **AWS Account**: Create an AWS Account & have basic understanding of ECS, API Gateway, Docker & Python
-- **AWS CLI Installed and Configured**: Install & configure AWS CLI to programatically interact with AWS
-- **Serpapi Library**: Install Serpapi library in local environment "pip install google-search-results"
-- **Docker CLI and Desktop Installed**: To build & push container images
-
----
+- **Sports API Key:** Sign up at [SerpApi](https://serpapi.com) and obtain an API Key  
+- **AWS Account:** Basic knowledge of AWS ECS, API Gateway, Docker, and Python  
+- **AWS CLI Installed:** Used for programmatic AWS interactions  
+- **SerpApi Library:** Install it locally via:  
 
 ## **Technical Architecture**
-![Brown Minimalist Lifestyle Daily Vlog YouTube Thumbnail (2)](https://github.com/user-attachments/assets/32e49fe6-df16-40cb-b262-af1478cf01d5)
+<img width="544" alt="image" src="https://github.com/user-attachments/assets/c5005ce3-14a8-43d0-aa02-88da0286793a" />
+
 
 ---
 
@@ -53,7 +51,7 @@ sports-api-management/
 
 ### **Clone the Repository**
 ```bash
-git clone https://github.com/ifeanyiro9/containerized-sports-api.git
+git clone https://github.com/blessedsoft/containerized-sports-api.git
 cd containerized-sports-api
 ```
 ### **Create ECR Repo**
@@ -132,14 +130,16 @@ docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-a
 curl https://<api-gateway-id>.execute-api.us-east-1.amazonaws.com/prod/sports
 ```
 
-### **What We Learned**
-Setting up a scalable, containerized application with ECS
-Creating public APIs using API Gateway.
+### **Key Takeaway**
+Deploying a containerized application on AWS ECS (Fargate)
+Exposing APIs securely using API Gateway
+Managing scalability and high availability with ALB and ECS tasks
+
+
 
 ### **Future Enhancements**
-Add caching for frequent API requests using Amazon ElastiCache
-Add DynamoDB to store user-specific queries and preferences
-Secure the API Gateway using an API key or IAM-based authentication
-Implement CI/CD for automating container deployments
-
+Implement caching for frequently requested API data using Amazon ElastiCache
+Integrate DynamoDB to store user preferences and query history
+Enhance security by using IAM-based authentication or API keys for API Gateway
+Implement CI/CD for automated container deployments
 
