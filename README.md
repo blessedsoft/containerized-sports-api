@@ -20,7 +20,8 @@ This project showcases the development of a **containerized API management syste
 - **SerpApi Library:** Install it locally via:  
 
 ## **Technical Architecture**
-<img width="544" alt="image" src="https://github.com/user-attachments/assets/c5005ce3-14a8-43d0-aa02-88da0286793a" />
+<img width="787" alt="image" src="https://github.com/user-attachments/assets/6b4ecad2-2025-4948-9d19-edde03d332c2" />
+
 
 
 ---
